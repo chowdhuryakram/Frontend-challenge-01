@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Challenge Website From Frontend Mentor</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -32,7 +33,7 @@
 
     <main>
         <!-- Hero Section Start -->
-        <section class="container">
+        <section  class="container">
             <div class="hero">
                 <div class="hero_left">
                     <img src="assets/images/image-web-3-desktop.jpg" alt="">
@@ -44,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero_right">
+                <div data-aos="fade-left" data-aos-dealy="100" data-aos-duration="1000" class="hero_right">
                     <div class="hero_right_news">
                         <h2>New</h2>
                         <h3>Hydrogen VS Electric Cars</h3>
@@ -64,7 +65,7 @@
         <!-- Hero Section End -->
 
         <!-- Product Section Start -->
-        <section class="container">
+        <section data-aos="fade-right" data-aos-dealy="500" data-aos-duration="1000" class="container">
             <div class="product">
                 <div class="product_item">
                     <img src="assets/images/image-retro-pcs.jpg" alt="">
@@ -95,5 +96,9 @@
         <!-- Product Section End -->
     </main>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
